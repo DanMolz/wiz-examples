@@ -17,14 +17,14 @@ wiz-sensor:
     create: false # We create it manually
     name: "sensor-image-pull"
   daemonset:
-  # resource values for the wiz sensor
-  resources:
-    limits:
-      cpu: "300m"
-      memory: "300Mi"
-    requests:
-      cpu: "10m"
-      memory: "50Mi"
+    # resource values for the wiz sensor
+    resources:
+      limits:
+        cpu: "300m"
+        memory: "300Mi"
+      requests:
+        cpu: "10m"
+        memory: "50Mi"
 
 wiz-admission-controller:
   enabled: true
